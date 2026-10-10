@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!--favicon-->
+	<link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+	<link rel="shortcut icon" href="./favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+	<link rel="manifest" href="./site.webmanifest" />
+
+    <title>Joice - Senior QA Engineer</title>
+    <!-- Tailwind CSS CDN with forms and container queries plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Custom Color Scheme Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                rose: '#a86b88',
+                roseHover: '#955c76',
+                bg: '#faf7f2',
+                card: '#ffffff',
+                border: '#3b3a39',
+                lightBorder: '#e5e0d8',
+                textPrimary: '#22201e',
+                textMuted: '#686461',
+                btnPrimary: '#0d6efd',
+                btnPrimaryHover: '#0b5ed7',
+                btnNeutral: '#dedede',
+                btnNeutralHover: '#cfcfcf'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <!-- General Layout & Presentation Rules -->
+    <style data-purpose="base-layout">
+      body {
+        background-color: #faf7f2;
+        color: #22201e;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-brand-bg text-brand-textPrimary min-h-screen flex flex-col antialiased">
+    <!-- BEGIN: MainHeader -->
+    <header class="sticky top-0 z-50 bg-[#a86b88] text-white shadow-sm">
+      <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <!-- EDIT: NAVBAR_BRAND -->
+        <a class="text-xl font-medium tracking-tight hover:opacity-90 transition-opacity" href="#">Joice - QA Engineer</a>
+        <!-- Navigation Links -->
+        <nav class="flex items-center space-x-6 text-sm sm:text-base font-normal">
+          <a class="hover:text-amber-100 transition-colors" href="#about">About</a>
+          <a class="hover:text-amber-100 transition-colors" href="#projects">Projects</a>
+          <a class="hover:text-amber-100 transition-colors" href="#skills-tools">Skill/Tools</a>
+          <a class="hover:text-amber-100 transition-colors" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <!-- END: MainHeader -->
+    <!-- BEGIN: MainContent -->
+    <main class="flex-grow w-full max-w-5xl mx-auto px-6 py-12 space-y-20">
+      <!-- BEGIN: HeroSection -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-4" id="hero">
+        <!-- Left Column: Profile Avatar / Image Container -->
+        <div class="w-full max-w-sm mx-auto md:mx-0 border border-brand-border bg-white p-2 aspect-square flex items-center justify-center shadow-sm">
+          <img alt="Avatar Portrait" class="w-full h-full object-cover" src="./profile.png" />
+        </div>
+        <!-- Right Column: Details & Actions -->
+        <div class="flex flex-col justify-center space-y-4">
+          <!-- EDIT: YOUR_NAME -->
+          <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-900">Daryll Joice Palapar</h1>
+          <!-- EDIT: YOUR_JOB_TITLE -->
+          <h2 class="text-xl sm:text-2xl font-bold text-neutral-800">Senior QA Engineer</h2>
+          <!-- EDIT: SHORT_INTRODUCTION -->
+          <p class="text-base text-brand-textMuted leading-relaxed max-w-md"> Senior QA Engineer specializing in software testing, test automation, quality assurance, defect tracking, and reliable software delivery. </p>
+          <!-- CTA Buttons -->
+          <div class="pt-4 flex flex-wrap gap-4">
+            <!-- EDIT: VIEW_PROJECTS_BUTTON -->
+            <a class="px-5 py-2.5 bg-[#dcdcdc] text-neutral-800 text-sm font-medium rounded-md hover:bg-[#cfcfcf] border border-neutral-300 transition-colors" href="#projects"> View My Projects </a>
+            <!-- EDIT: CONTACT_ME_BUTTON -->
+            <a class="px-5 py-2.5 bg-[#dcdcdc] text-neutral-800 text-sm font-medium rounded-md hover:bg-[#cfcfcf] border border-neutral-300 transition-colors" href="#contact"> Contact Me </a>
+          </div>
+        </div>
+      </section>
+      <!-- END: HeroSection -->
+      <!-- BEGIN: AboutMeSection -->
+      <section class="space-y-6" id="about">
+        <h2 class="text-3xl font-bold text-center text-neutral-900">About Me</h2>
+        <!-- Rounded Container Frame -->
+        <div class="w-full border-2 border-neutral-800 rounded-3xl p-8 sm:p-12 min-h-[160px] flex items-center justify-center bg-transparent">
+          <!-- EDIT: ABOUT_YOU -->
+          <p class="text-center text-neutral-700 text-base sm:text-lg max-w-2xl leading-relaxed">As a Senior QA Engineer, I specialize in ensuring software quality, reliability, and performance through systematic testing and quality assurance practices. My expertise includes test planning, manual and automated testing, test case design, defect tracking, regression testing, and software testing methodologies. I collaborate with developers, product managers, and cross-functional teams to identify risks, resolve issues, and improve the software development lifecycle. My goal is to deliver dependable, user-friendly applications by promoting continuous improvement, efficient testing processes, and a strong quality-driven culture.</p>
+        </div>
+      </section>
+      <!-- END: AboutMeSection -->
+      <!-- BEGIN: ProjectsSection -->
+      <section class="space-y-8" id="projects">
+        <h2 class="text-3xl font-bold text-center text-neutral-900">Projects</h2>
+        <!-- 3-Column Project Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Project Card 1 -->
+          <article class="bg-white border border-neutral-300 rounded-lg overflow-hidden flex flex-col shadow-sm">
+            <!-- EDIT: PROJECT_IMAGE -->
+            <img alt="Project thumbnail" class="w-full h-48 object-cover" src="https://www.qandle.com/blog/wp-content/uploads/2023/08/4332392_18940-removebg-preview.png" />
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-xl font-bold text-neutral-900">HR Management System</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-sm text-neutral-700 leading-relaxed">Designed a comprehensive QA testing approach for an HR Management System, focusing on employee records, attendance tracking, leave management, and role-based access control. Applied manual testing, test case design, and regression testing to identify defects and improve application reliability and data accuracy.</p>
+              </div>
+              <div>
+                <!-- EDIT: PROJECT_LINK -->
+                <a class="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors" href="#"> Project Link </a>
+              </div>
+            </div>
+          </article>
+          <!-- Project Card 2 -->
+          <article class="bg-white border border-neutral-300 rounded-lg overflow-hidden flex flex-col shadow-sm">
+            <!-- EDIT: PROJECT_IMAGE -->
+            <img alt="Project thumbnail" class="w-full h-48 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJYlTpHdJ33ixBLXvOxFCzneg973Eq_HJ0u5dYcXIioA&s=10" />
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-xl font-bold text-neutral-900">AI Chatbot</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-sm text-neutral-700 leading-relaxed">Developed test scenarios for a chatbot to validate response accuracy, conversation flows, input validation, and error handling. Applied functional testing, negative testing, and exploratory testing to identify inconsistencies and improve chatbot usability and response reliability.</p>
+              </div>
+              <div>
+                <!-- EDIT: PROJECT_LINK -->
+                <a class="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors" href="#"> Project Link </a>
+              </div>
+            </div>
+          </article>
+          <!-- Project Card 3 -->
+          <article class="bg-white border border-neutral-300 rounded-lg overflow-hidden flex flex-col shadow-sm">
+            <!-- EDIT: PROJECT_IMAGE -->
+            <img alt="Project thumbnail" class="w-full h-48 object-cover" src="https://images.golinks.io/blog/wp-content/uploads/2022/07/20102807/Blog-Header%402x-3.png" />
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <!-- EDIT: PROJECT_TITLE -->
+                <h3 class="text-xl font-bold text-neutral-900">Knowledge Management System</h3>
+                <!-- EDIT: PROJECT_DESCRIPTION -->
+                <p class="text-sm text-neutral-700 leading-relaxed">Created and executed test cases for a Knowledge Management System admin portal, covering content management, article publishing, search functionality, and user permissions. Applied manual testing, API testing, and defect tracking to help ensure reliable content administration, secure access, and a consistent user experience.</p>
+              </div>
+              <div>
+                <!-- EDIT: PROJECT_LINK -->
+                <a class="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded hover:bg-blue-700 transition-colors" href="#"> Project Link </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- END: ProjectsSection -->
+      <!-- BEGIN: SkillsToolsSection -->
+      <section class="space-y-8" id="skills-tools">
+        <h2 class="text-3xl font-bold text-center text-neutral-900">Skills &amp; Tools</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <!-- Skills Table/Box -->
+          <div class="border border-neutral-900 bg-white">
+            <div class="border-b border-neutral-900 py-2 px-4 text-center">
+              <h3 class="font-medium text-neutral-900">Skills</h3>
+            </div>
+            <!-- EDIT: SKILLS_LIST -->
+            <ul class="p-4 space-y-2 text-sm text-neutral-800">
+              <li>Manual, Functional, Regression, and Integration Testing</li>
+              <li>Test Case Design, Test Planning, and Test Execution</li>
+              <li>AI Evaluation and Test Automation</li>
+            </ul>
+          </div>
+          <!-- Tools / Technologies Table/Box -->
+          <div class="border border-neutral-900 bg-white">
+            <div class="border-b border-neutral-900 py-2 px-4 text-center">
+              <h3 class="font-medium text-neutral-900">Tools / Technologies</h3>
+            </div>
+            <!-- EDIT: TOOLS_LIST -->
+            <ul class="p-4 space-y-2 text-sm text-neutral-800">
+              <li>Test Management & Project Tracking: Jira, YouTrack, Trello</li>
+              <li>AI/LLM Testing: Promptfoo</li>
+              <li>Test Automation: Playwright</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- END: SkillsToolsSection -->
+      <!-- BEGIN: ContactsSection -->
+      <section class="space-y-6" id="contact">
+        <h2 class="text-3xl font-bold text-center text-neutral-900">Contacts</h2>
+        <!-- Rounded Container Frame for Contacts -->
+        <div class="w-full border-2 border-neutral-800 rounded-3xl p-8 sm:p-12 flex flex-col items-center justify-center text-center space-y-1 bg-transparent">
+          <!-- EDIT: CONTACT_INFO -->
+          <p class="text-neutral-800 text-sm sm:text-base">palaparjoy@gmail.com</p>
+          <p class="text-neutral-800 text-sm sm:text-base">0921-552-0073</p>
+          <p class="text-neutral-800 text-sm sm:text-base">
+            <a class="hover:underline text-neutral-900 font-medium" href="#">www.linkedin.com/in/djpalapar5</a>
+          </p>
+        </div>
+      </section>
+      <!-- END: ContactsSection -->
+    </main>
+    <!-- END: MainContent -->
+    <!-- BEGIN: MainFooter -->
+    <footer class="w-full border-t border-neutral-900 py-6 bg-transparent mt-12">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <!-- EDIT: FOOTER_TEXT -->
+        <p class="text-neutral-900 text-sm font-medium">© 2026  Joice Palapar. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- END: MainFooter -->
+  </body>
+</html>
+
